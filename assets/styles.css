@@ -554,13 +554,13 @@ h2::after {
 .site-footer .fine { font-size: .78rem; }
 
 /* ------------------------------ reveal ----------------------------------- */
-[data-reveal] {
+.js [data-reveal] {
   opacity: 0;
   transform: translateY(22px);
   transition: opacity .6s ease, transform .6s ease;
   will-change: opacity, transform;
 }
-[data-reveal].is-visible { opacity: 1; transform: none; }
+.js [data-reveal].is-visible { opacity: 1; transform: none; }
 
 /* ------------------------------ responsive ------------------------------- */
 @media (max-width: 760px) {
@@ -580,6 +580,6 @@ h2::after {
   html { scroll-behavior: auto; }
   .bg-aurora, .bg-scan, .glitch::before, .glitch::after,
   .caret, .working .dot { animation: none !important; }
-  [data-reveal] { opacity: 1; transform: none; transition: none; }
+  .js [data-reveal] { opacity: 1; transform: none; transition: none; }
   .btn:hover, .card:hover, .contact-card:hover, .working a:hover { transform: none; }
 }
